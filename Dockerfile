@@ -9,6 +9,7 @@ RUN docker-php-ext-install pdo_mysql
 WORKDIR /app
 COPY . /app
 RUN composer install
+RUN cp .env.example .env
 
 CMD php artisan serve --host=0.0.0.0 --port=8181
 EXPOSE 8181
