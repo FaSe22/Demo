@@ -1,4 +1,4 @@
-FROM php:8.1
+FROM php:8.0.5
 COPY . /var/www/html
 RUN chmod 777 -R /var/www/html/storage
 RUN chmod 777 -R /var/www/html/bootstrap/cache
